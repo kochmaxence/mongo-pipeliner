@@ -1,0 +1,27 @@
+{
+  "name": "mongo-pipeliner",
+  "version": "0.0.0",
+  "description": "Yet Another Pipeline Generator... With bonuses.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kochmaxence/mongo-pipeliner.git"
+  },
+  "keywords": [
+    "mongo",
+    "mongoose",
+    "mongodb",
+    "pipeline",
+    "pipe",
+    "generator"
+  ],
+  "author": "MK <mkoch@adneom.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kochmaxence/mongo-pipeliner/issues"
+  },
+  "homepage": "https://github.com/kochmaxence/mongo-pipeliner#readme"
+}
