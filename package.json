@@ -2,7 +2,7 @@
   "name": "mongo-pipeliner",
   "version": "0.0.0",
   "description": "Yet Another Pipeline Generator... With bonuses.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
