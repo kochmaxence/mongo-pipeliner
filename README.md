@@ -15,3 +15,38 @@ The package `mongodb` is used to cast ObjectId. If you already use a library lik
 ## Usage
 
 ## Contributing
+
+## Documentation
+
+### runners
+
+* `pipeline`
+* `pipelineA`
+* `aggregate`
+* `aggregatePaginate`
+
+### stages
+
+#### Basics
+
+* `count`
+* `facet`
+* `group`
+* `limit`
+* `lookup`
+* `match`
+* `project`
+* `skip`
+* `sort`
+* `unwind`
+
+#### Compounds
+
+* `selfGroup`
+* `groupWithObject`
+* `lookupUnwind`
+* `unwindLookup`
+* `lookups`
+* `lookupSubRef`
+* `lookupSubRefs`
+* `paginate`
