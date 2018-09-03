@@ -13,6 +13,7 @@ module.exports = [
 	'./stages/basics/sample',
 	'./stages/basics/replaceRoot',
 	'./stages/basics/redact',
+	'./stages/basics/listSessions',
 
 	'./stages/compounds/group',
 	'./stages/compounds/lookup',
