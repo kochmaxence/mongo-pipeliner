@@ -13,5 +13,7 @@ const makeStage = f => (...args) => (pipeline = []) => (
 
 module.exports = {
 	compose,
-	pipe
+	pipe,
+
+	makeStage
 };
