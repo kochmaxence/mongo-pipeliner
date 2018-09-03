@@ -3,3 +3,7 @@ const sortByCount = field => (pipeline = []) => (
 		$sortByCount: field
 	}])
 );
+
+module.exports = {
+	sortByCount
+};

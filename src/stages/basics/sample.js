@@ -3,3 +3,7 @@ const sample = size => (pipeline = []) => (
 		$sample: { size }
 	}])
 );
+
+module.exports = {
+	sample
+};

@@ -11,6 +11,7 @@ module.exports = [
 	'./stages/basics/project',
 	'./stages/basics/sortByCount',
 	'./stages/basics/sample',
+	'./stages/basics/replaceRoot',
 
 	'./stages/compounds/group',
 	'./stages/compounds/lookup',
