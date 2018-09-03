@@ -2,14 +2,24 @@
 
 Yet Another Pipeline Generator... With bonuses.
 
+## Status
+
+Until it is published to NPM:
+- Consider the whole repository **unstable**.
+- All changes will be made directly in **master**.
+- Dead code ~can~ will happen.
+- Weird things.
+
 ## Roadmap
 
 Before being published to npm, the following todo list must be completed:
 
 - Documentation
 - All mongo stages
+- Tests
+- CI
 
-Fist version will be 0.0.0. More work must be done to have a clean API.
+First version will be 0.0.0. More work must be done to have a clean API.
 
 When the API is production-ready, the version will jump to 1.0.0 and stay semver.
 
