@@ -1,8 +1,6 @@
-const sortByCount = field => (pipeline = []) => (
-	pipeline.concat([{
-		$sortByCount: field
-	}])
-);
+const { makeStage } = require('../../helpers');
+
+const sortByCount = makeStage(field => ({ $sortByCount: field }));
 
 module.exports = {
 	sortByCount

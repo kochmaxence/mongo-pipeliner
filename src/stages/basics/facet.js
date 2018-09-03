@@ -1,8 +1,5 @@
+const { makeStage } = require('../../helpers');
 
-const facet = query => (pipeline = []) => (
-	pipeline.concat([{
-		$facet: query
-	}])
-);
+const facet = makeStage(query => ({ $facet: query }));
 
 module.exports = { facet };

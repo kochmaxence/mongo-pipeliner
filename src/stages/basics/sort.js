@@ -1,4 +1,6 @@
-const sort = query => (pipeline = []) => {
+const { makeStage } = require('../../helpers');
+
+const sort = makeStage(query => {
 	const _query = (
 		Object
 			.keys(query)
@@ -18,9 +20,7 @@ const sort = query => (pipeline = []) => {
 			}, {})
 	);
 
-	return pipeline.concat([{
-		$sort: _query
-	}]);
-};
+	return { $sort: _query };
+});
 
 module.exports = { sort };

@@ -1,8 +1,6 @@
-const project = (query) => (pipeline = []) => (
-	pipeline.concat([{
-		$project: query
-	}])
-);
+const { makeStage } = require('../../helpers');
+
+const project = makeStage(query => ({ $project: query }));
 
 module.exports = {
 	project

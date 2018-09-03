@@ -1,8 +1,5 @@
+const { makeStage } = require('../../helpers');
 
-const skip = n => (pipeline = []) => (
-	pipeline.concat([{
-		$skip: n
-	}])
-);
+const skip = makeStage(n => ({ $skip: n }));
 
 module.exports = { skip };

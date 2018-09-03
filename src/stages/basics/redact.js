@@ -1,8 +1,6 @@
-const redact = expr => (pipeline = []) => (
-	pipeline.concat([{
-		$redact: expr
-	}])
-);
+const { makeStage } = require('../../helpers');
+
+const redact = makeStage(expr => ({ $redact: expr }));
 
 module.exports = {
 	redact

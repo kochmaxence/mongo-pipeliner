@@ -7,6 +7,9 @@ const pipe = (...fns) => (
 		))
 );
 
+const makeStage = f => (...args) => (pipeline = []) => (
+	pipeline.concat(f(...args))
+);
 
 module.exports = {
 	compose,

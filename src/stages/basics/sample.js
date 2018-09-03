@@ -1,8 +1,6 @@
-const sample = size => (pipeline = []) => (
-	pipeline.concat([{
-		$sample: { size }
-	}])
-);
+const { makeStage } = require('../../helpers');
+
+const sample = makeStage(size => ({ $sample: { size }}));
 
 module.exports = {
 	sample

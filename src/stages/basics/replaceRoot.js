@@ -1,8 +1,6 @@
-const replaceRoot = newRoot => (pipeline = []) => (
-	pipeline.concat([{
-		$replaceRoot: { newRoot }
-	}])
-);
+const { makeStage } = require('../../helpers');
+
+const replaceRoot = makeStage(newRoot => ({ $replaceRoot: { newRoot }}));
 
 module.exports = {
 	replaceRoot

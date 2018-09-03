@@ -1,8 +1,5 @@
+const { makeStage } = require('../../helpers');
 
-const limit = n => (pipeline = []) => (
-	pipeline.concat([{
-		$limit: n
-	}])
-);
+const limit = makeStage(n => ({ $limit: n }));
 
 module.exports = { limit };

@@ -1,8 +1,6 @@
-const count = field => (pipeline = []) => (
-	pipeline.concat([{
-		$count: field
-	}])
-);
+const { makeStage } = require('../../helpers');
+
+const count = makeStage(field => ({ $count: field }));
 
 module.exports = {
 	count

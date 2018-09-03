@@ -1,5 +1,7 @@
-const unwind = (path, { includeArrayIndex, preserve } = {}) => (pipeline = []) => (
-	pipeline.concat([{
+const { makeStage } = require('../../helpers');
+
+const unwind = makeStage((path, { includeArrayIndex, preserve } = {}) => (
+	{
 		$unwind: Object.assign(
 			{
 				path: '$'+path
@@ -7,8 +9,8 @@ const unwind = (path, { includeArrayIndex, preserve } = {}) => (pipeline = []) =
 			(includeArrayIndex && { includeArrayIndex }),
 			(preserve && { preserveNullAndEmptyArrays: preserve })
 		)
-	}])
-);
+	}
+));
 
 module.exports = {
 	unwind

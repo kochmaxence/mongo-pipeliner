@@ -1,8 +1,6 @@
-const group = fields => (pipeline = []) => (
-	pipeline.concat([{
-		$group: fields
-	}])
-);
+const { makeStage } = require('../../helpers');
+
+const group = makeStage(fields => ({ $group: fields }));
 
 module.exports = {
 	group
