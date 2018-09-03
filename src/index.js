@@ -10,6 +10,7 @@ module.exports = [
 	'./stages/basics/count',
 	'./stages/basics/project',
 	'./stages/basics/sortByCount',
+	'./stages/basics/sample',
 
 	'./stages/compounds/group',
 	'./stages/compounds/lookup',
