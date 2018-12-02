@@ -17,6 +17,7 @@ module.exports = [
   './stages/basics/indexStats',
   './stages/basics/addFields',
   './stages/basics/bucket',
+  './stages/basics/bucketAuto',
 
   './stages/compounds/group',
   './stages/compounds/lookup',
