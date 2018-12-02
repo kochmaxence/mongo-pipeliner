@@ -18,7 +18,7 @@
     "pipe",
     "generator"
   ],
-  "author": "MK <mkoch@adneom.com>",
+  "author": "MK <maxence@getaccountable.eu>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kochmaxence/mongo-pipeliner/issues"

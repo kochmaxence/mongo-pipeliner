@@ -9,8 +9,8 @@ const selfGroup = fields => (pipeline = []) => (
 			data[1]
 				? data[1]
 				: key === '_id'
-					? '$_id'
-					: { $first: '$'+key }
+				? '$_id'
+				: { $first: '$'+key }
 		);
 
 

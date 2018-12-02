@@ -95,8 +95,8 @@ const aggregatePaginate = (model, options) => (...stagesFn) => (page, limit) => 
 		.aggregate(_pipeline)
 		.then(([ result ]) => {
 			const count = result[countField].length
-				? result[countField][0][countField]
-				: 0;
+				    ? result[countField][0][countField]
+				    : 0;
 
 			const items = result[resultField];
 

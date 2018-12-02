@@ -12,8 +12,8 @@ const sort = makeStage(query => {
 					typeof value === 'number'
 						? value
 						: value === 'asc'
-							? 1
-							: -1
+						? 1
+						: -1
 				);
 
 				return acc;
