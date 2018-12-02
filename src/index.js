@@ -15,6 +15,7 @@ module.exports = [
 	'./stages/basics/redact',
 	'./stages/basics/listSessions',
 	'./stages/basics/indexStats',
+	'./stages/basics/addFields',
 
 	'./stages/compounds/group',
 	'./stages/compounds/lookup',
