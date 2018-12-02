@@ -11,9 +11,9 @@ const { pipe } = require('../helpers');
  * @returns {object} pipeline
  */
 const pipeline = (...stagesFn) => {
-	const _pipeline = pipe(...stagesFn.filter(Boolean))([]);
+  const _pipeline = pipe(...stagesFn.filter(Boolean))([]);
 
-	return _pipeline;
+  return _pipeline;
 };
 
 /**
